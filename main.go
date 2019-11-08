@@ -38,7 +38,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("cannot unmarshal data: %v", err)
 	}
-	// fmt.Println(dc.Services)
 	for _, service := range dc.Services {
 
 		if down {
@@ -90,7 +89,6 @@ func main() {
 		docker_command += "docker rm $(docker ps -a -q);"
 	}
 
-	// docker_command += " docker logs"
 	fmt.Println(docker_command)
 	fmt.Println(dockerLogs_command)
 
