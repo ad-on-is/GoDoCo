@@ -11,3 +11,7 @@ It reads a `docker-compose.yml` file and outputs `docker run` commands with volu
 2. Run `./godoco up` to get the commands for starting the docker containers
 3. Copy output and paste into terminal
 4. Run `./godoco down` to get the commands for stoping and deleting containers
+
+## Limitations
+- Absolute paths only
+- No `:cached` or whatsoever parameters in volume-mounts
